@@ -1,0 +1,71 @@
+Find the Blockchain
+npm version
+License: MIT
+React
+Vite
+🎮 Overview
+Find the Blockchain is a fun, daily mini-game built with React and Vite! Each day, a "winning" blockchain is randomly selected from a curated list of popular ones (like Ethereum, Solana, Bitcoin, and more). Your challenge? Guess which one it is in as few attempts as possible.
+
+Daily Reset: A new winner every 24 hours – perfect for a quick daily check-in.
+Simple Mechanics: Input your guess, get feedback (e.g., "Too early/late in the alphabet" or direct hints), and reveal the answer at the end.
+Educational Twist: Learn about different blockchains while playing!
+
+This project started as a basic React + Vite template and has been enhanced with game logic, UI polish, persistence (via localStorage), and mobile responsiveness. Whether you're a crypto newbie or a blockchain pro, it's a lighthearted way to engage with the ecosystem.
+Why this game? In a world of complex DeFi and NFTs, sometimes you just need a silly guess-the-word-style game... but with chains!
+🚀 Features
+
+Daily Challenge: One puzzle per day, seeded by date for consistency across devices.
+Guess Feedback: Color-coded hints (green for correct, yellow for close, gray for way off) inspired by Wordle.
+Score Tracking: Track your streaks and best guesses locally.
+Blockchain List: Pre-loaded with 20+ real blockchains (e.g., Ethereum, Polkadot, Avalanche).
+Responsive Design: Works on desktop, tablet, and mobile.
+Dark/Light Mode: Auto-detects your system theme.
+Shareable Results: Copy a spoiler-free emoji summary to share your score.
+
+🛠️ Tech Stack
+
+Frontend: React 18.x with hooks for state management.
+Build Tool: Vite 5.x for lightning-fast development and builds.
+Styling: Tailwind CSS for rapid, utility-first design (added for better UX).
+State Management: Zustand for lightweight global state (guesses, scores).
+Persistence: localStorage for daily progress.
+Linting & Formatting: ESLint + Prettier for clean code.
+Testing: Vitest + React Testing Library (basic setup included).
+Deployment: Ready for Vercel/Netlify (see Deployment section).
+
+No backend required – everything runs client-side!
+📦 Installation
+
+Clone the Repository:Bashgit clone https://github.com/ManiacXHG/Find-the-blockchain.git
+cd Find-the-blockchain
+Install Dependencies:Bashnpm installThis sets up React, Vite, Tailwind, Zustand, and all dev tools.
+Run the Development Server:Bashnpm run devOpen http://localhost:5173 in your browser. Hot Module Replacement (HMR) will auto-reload on changes!
+
+🎯 Usage
+
+Start Playing:
+Load the app – today's puzzle awaits!
+Type a blockchain name (e.g., "Ethereum") in the input field.
+Hit Enter or click "Guess" to submit.
+
+Hints & Rules:
+6 Guesses Max: Like Wordle, but shorter for quick plays.
+Feedback:
+🟩 Green: Correct position.
+🟨 Yellow: In the name, wrong spot.
+⬜ Gray: Not in the name.
+
+Win Condition: Guess correctly within 6 tries.
+End of Day: Reveals the answer and resets tomorrow.
+
+Advanced Tips:
+Use the "Stats" button to view your history.
+Share button generates a tweet-friendly summary: "I guessed the blockchain in 3 tries! #FindTheBlockchain 🟩🟨⬜"
+
+
+Example gameplay (simulated):
+textGuess 1: Bitcoin → ⬜⬜⬜⬜⬜⬜ (Nope!)
+Guess 2: Solana → 🟨🟨⬜⬜🟨⬜ (Close!)
+...
+Guess 3: Solana → 🟩🟩🟩🟩🟩🟩 (Win!)
+🏗️ Project Structure
